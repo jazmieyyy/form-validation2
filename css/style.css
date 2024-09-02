@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading1{
+    color: green;
+    text-align: center;
+}
+
+.form-container{
+    text-align: center;
+}
+
+.contact-form{
+    background-color: rgb(29, 36, 90);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    border: solid rgb(72, 35, 139);
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+}
+
+.name,
+.email,
+.form-container textarea,
+.phone,
+.pwd{
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+}
+
+.gender input[type="radio"],
+.languages input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+
+.name-container, 
+.email-container, 
+.address-container,
+.phone-container,
+.password-container {
+    margin-bottom: 15px; 
+}
+
+.gender-container,
+.lang-container,
+.education-container {
+    text-align: left; 
+    margin-bottom: 15px;
+}
+
+.gender-container {
+    margin-bottom: 35px;
+}
+
+.submit-btn{
+    background-color: #3987da;
+    color: white;
+    padding: 10px 20px;
+    width: 90%;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    max-block-size: absolute;
+}

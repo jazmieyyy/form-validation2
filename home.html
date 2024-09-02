@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="form-container">
+    <h1 class="heading1">FORM VALIDATION</h1>
+    <h2>BIO DATA</h2>
+    <FORM action="" method="post" class="contact-form" onsubmit="return validation()">
+        <div class="name-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="name" placeholder="Enter your name" required>
+        </div>
+        <div class="email-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="email" placeholder="Enter your email" required>
+        </div>
+        <div class="password-container">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" class="pwd" name="pwd" placeholder="Enter your password" required>
+        </div>
+        <div class="phone-container">
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" class="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="gender-container">
+        <div class="gender">
+            <label for="gender">Sex</label>
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="other" value="other">Other
+        </div>
+        <div class="marriage-container">
+            <label for="marital-status">Marital Status</label>
+            <input list="marital-statuses" id="marital-status" name="marital-status" placeholder="Select or enter your marital status">
+            <datalist id="marital-statuses">
+                <option value="Single">
+                <option value="Married">
+                <option value="Divorced">
+                <option value="Widowed">
+            </datalist>
+        </div>
+        </div>
+        <div class="address-container">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4" placeholder="Enter your address" required></textarea>
+        </div>
+        <div class="education-container">
+        <label for="education">Education Level</label>
+        <select id="education" name="education">
+            <option value="select">Select</option>
+            <option value="highschool">High School</option>
+            <option value="associate">Associate Degree</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD</option>
+        </select>
+        </div>
+        <div class="lang-container">
+        <div class="languages">
+            <label for="lang">Languages known</label>
+            <input type="checkbox" name="lang" id="eng" value="eng">English
+            <input type="checkbox" name="lang" id="mal" value="mal">Malayalam
+            <input type="checkbox" name="lang" id="hin" value="hin">Hindi
+            <input type="checkbox" name="lang" id="tam" value="tam">Tamil
+        </div>
+        </div>
+        <div class="submit-container">
+            <input type="submit" class="submit-btn" id="btn" value="submit" />
+        </div>
+    </FORM>
+</div>
+
+<script src="js\script.js"></script>
+</body>
+</html>
